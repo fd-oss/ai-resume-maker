@@ -12,7 +12,10 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: "https://ai-resume-maker-three-topaz.vercel.app",
+  origin:[ 
+    "https://ai-resume-maker-three-topaz.vercel.app",
+  "https://ai-resume-maker-m551aau3p-fd-oss-projects.vercel.app"
+  ],
   credentials: true,
 }));
 app.use(express.json({ limit: '10mb' }));
